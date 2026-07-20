@@ -347,7 +347,7 @@ You can retrieve a certificate from your local store by adding the configuration
 
 #### Get certificate from file path
 
-It's possible to get a certificate file, such as a **pfx** file, directly from a file path on your machine and load it into the application by using the configuration as shown below. Replace the values in the `Certificate` key of the `daemon-console\appsettings.json` file with the snippet shown below also replacing `<PATH_TO_YOUR_CERTIFICATE_FILE>` with the path to your certificate file and `<PATH_TO_YOUR_CERTIFICATE_FILE>` with that certificates password. If you created the application with the `Configure.ps1` script found in the `AppCreationScripts-withCert` a **pfx** file called **DaemonConsoleCert.pfx** will be generated that is associated with certificate used as a credential for your app. If you like, you can use configure the `Certificate` property to reference this file and use it as a credential.
+It's possible to get a certificate file, such as a **pfx** file, directly from a file path on your machine and load it into the application by using the configuration as shown below. Replace the values in the `Certificate` key of the `daemon-console\appsettings.json` file with the snippet shown below also replacing `<PATH_TO_YOUR_CERTIFICATE_FILE>` with the path to your certificate file and `<CERTIFICATE_PASSWORD>` with that certificate's password. If you created the application with the `Configure.ps1` script found in the `AppCreationScripts-withCert` a **pfx** file called **DaemonConsoleCert.pfx** will be generated that is associated with certificate used as a credential for your app. If you like, you can use configure the `Certificate` property to reference this file and use it as a credential.
 
   ```json
   {
